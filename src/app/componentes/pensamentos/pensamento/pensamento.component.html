@@ -1,1 +1,16 @@
-<p>pensamento works!</p>
+<!--Estamos interpolando a classe css que está no objeto pensamento-->
+<!--ngClass irá verificar a função para inputar os estilos de forma dinamica-->
+<div class="pensamento {{ pensamento.modelo }} ff-roboto-mono" [ngClass]="larguraPensamento()">
+   <!--Interpolamos as informações que estão setadas no objeto do componente-->
+    <img src="/assets/imagens/{{ pensamento.modelo }}.png" alt="">
+    <p class="conteudo">{{pensamento.conteudo}}</p>
+    <p class="conteudo"><b> {{pensamento.autoria}} </b></p>
+    <div class="acoes">
+        <button class="botao-editar">
+            <img src="/assets/imagens/icone-editar.png" alt="">
+        </button>
+        <button class="botao-excluir">
+            <img src="/assets/imagens/icone-excluir.png" alt="">
+        </button>
+    </div>
+</div>

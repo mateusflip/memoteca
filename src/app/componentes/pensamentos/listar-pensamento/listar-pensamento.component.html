@@ -4,4 +4,17 @@
         <!--RouterLink nos passamos a rota que queremos ser redirecionados quando clicar no botão-->
         <button routerLink="/criarPensamento" class="botao">Adicionar pensamento</button>
     </header>
+    <!--com a diretiva *ngIf iremos renderizar os cards somente se a lista estiver populada-->
+    <div class="mural" *ngIf="listaPensamentos.length > 0, else semPensamentos">
+        <!--ngFor é a forma no angular de se iterar uma lista-->
+        <div *ngFor="let pensamento of listaPensamentos">
+        <app-pensamento [pensamento] ="pensamento"></app-pensamento>
+        </div>
+    </div>
 </section>
+<!--ng-template não é renderizada por padrão ela só será rederizada na condição else do "if" acima-->
+<ng-template #semPensamentos><!--estamos dando o nome a esta tag de "semPensamentos"-->
+    <div class="ff-inter sem-pensamentos">
+        <p>Ainda não há pensamentos cadastrados</p>
+    </div>
+</ng-template>
