@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Pensamento } from '../pensamento';
 
 @Component({
   selector: 'app-pensamento',
@@ -8,8 +9,10 @@ import { Component, Input, OnInit } from '@angular/core';
 export class PensamentoComponent implements OnInit {
 
   //Anotação input diz que a propriedade pensamento vai receber informações do componente pai
+  // dois pontos a frente de pensamento é a assinatura da interface "Pensamento"
   @Input()
-  pensamento ={
+  pensamento: Pensamento ={
+    id: 0,
     conteudo: 'Eu gosto de Angular',
     autoria: 'Mateus',
     modelo: 'modelo3'

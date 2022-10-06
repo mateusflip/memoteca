@@ -1,0 +1,22 @@
+{
+    "pensamentos":[
+        {
+            "id": 1,
+            "conteudo": "Que bom que você veio",
+            "autoria": "Mateus",
+            "modelo":"modelo1"
+        },
+        {
+            "id": 2,
+            "conteudo": "Que horrível que você veio",
+            "autoria": "Mateus",
+            "modelo":"modelo2"
+        },
+        {
+            "id": 3,
+            "conteudo": "Melhor que não viesse",
+            "autoria": "Mateus",
+            "modelo":"modelo3"
+        }
+    ]
+}
