@@ -3,6 +3,7 @@ import { ListarPensamentoComponent } from './componentes/pensamentos/listar-pens
 import { CriarPensamentoComponent } from './componentes/pensamentos/criar-pensamento/criar-pensamento.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { EditarPensamentoComponent } from './componentes/pensamentos/editar-pensamento/editar-pensamento.component';
 
 //Configuração das rotas que temos na aplicação
 const routes: Routes = [
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
   path:'pensamentos/excluirPensamento/:id',
   component:ExcluirPensamentoComponent
+  },
+  {
+  path:'pensamentos/editarPensamento/:id',
+  component:EditarPensamentoComponent
   }
 ];
 
