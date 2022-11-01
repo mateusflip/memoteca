@@ -12,6 +12,12 @@
         </div>
     </div>
 </section>
+
+<app-botao-carregar-mais
+    [haMaisPensamentos]="haMaisPensamentos"
+    (click)="carregarMaisPensamentos()">
+</app-botao-carregar-mais>
+
 <!--ng-template não é renderizada por padrão ela só será rederizada na condição else do "if" acima-->
 <ng-template #semPensamentos><!--estamos dando o nome a esta tag de "semPensamentos"-->
     <div class="ff-inter sem-pensamentos">
