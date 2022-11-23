@@ -1,5 +1,15 @@
 <section class="container">
     <header class="header d-flex">
+        <div class="buscar-pensamentos">
+            <input type="search"
+                    class="filtro"
+                    placeholder="Busque um pensamento"
+                    autofocus
+                    [(ngModel)] = "filtro"
+                    (keyup) = "pesquisarPensamentos()">
+                    
+        </div>
+       <!-- <img src="../../../../assets/imagens/" alt="Lupa"> -->
         <h2 class="ff-inter">Meu Mural</h2>
         <!--RouterLink nos passamos a rota que queremos ser redirecionados quando clicar no botão-->
         <button routerLink="/criarPensamento" class="botao">Adicionar pensamento</button>
