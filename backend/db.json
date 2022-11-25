@@ -4,43 +4,50 @@
       "id": 1,
       "conteudo": "Que bom que você veio",
       "autoria": "Mateus",
-      "modelo": "modelo1"
+      "modelo": "modelo1",
+      "favorito": false
     },
     {
       "id": 2,
       "conteudo": "Que horrível que você veio",
       "autoria": "Mateus",
-      "modelo": "modelo2"
+      "modelo": "modelo2",
+      "favorito": false
     },
     {
       "id": 3,
       "conteudo": "Melhor que não viesse",
       "autoria": "Mateus",
-      "modelo": "modelo3"
+      "modelo": "modelo3",
+      "favorito": false
     },
     {
       "conteudo": "Agora eu acho que vai",
       "autoria": "Mateus R",
       "modelo": "modelo1",
+      "favorito": false,
       "id": 4
     },
     {
       "conteudo": "Formulário reativo",
       "autoria": "Angular1",
       "modelo": "modelo1",
+      "favorito": false,
       "id": 5
     },
     {
       "conteudo": "URSS ",
       "autoria": "Mateus Ramos",
       "modelo": "modelo1",
+      "favorito": false,
       "id": 6
     },
     {
       "id": 9,
       "conteudo": "pensando demais",
       "autoria": "Mateus",
-      "modelo": "modelo1"
+      "modelo": "modelo1",
+      "favorito": false
     }
   ]
 }
